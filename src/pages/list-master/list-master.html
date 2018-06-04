@@ -1,0 +1,38 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title text-center>NetworkTester</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content  text-center class="icons-basic-page">
+  <ion-row style="background-color:#615858;">
+    <ion-col class="ion-col1" style="margin-top: 24px;margin-bottom: 10px">
+      <ion-col>
+        <i class="iconfont icon-daichuku" style="color: #29a933" (click)="toOutBound()"></i>
+        <p class="myFontStyle">{{'OUT_BOUND' | translate}}</p>  <!--出库-->
+      </ion-col>
+    </ion-col>
+    <ion-col class="ion-col1" style="margin-top: 24px">
+      <ion-col>
+        <i class="iconfont icon-weiwaijiagongcaigouruku" style="color: #eb6100" (click)="toReturnGoods()"></i>
+        <p class="myFontStyle">{{'RETURNS' | translate}}</p>  <!--退货-->
+      </ion-col>
+    </ion-col>
+    <!--</ion-row>-->
+    <!--<ion-row style="background-color:#615858;">-->
+    <ion-col class="ion-col1" style="margin-top: -45px">
+      <ion-col>
+        <p class="myFontStyle">{{'OUT_BOUND_TODAY' | translate}}</p>
+        <p style="color: red">{{todyCHData}}</p>
+      </ion-col>
+    </ion-col>
+    <ion-col class="ion-col1" style="margin-top: -45px">
+      <ion-col>
+        <p class="myFontStyle">{{'RETURNS_TODAY' | translate}}</p>
+        <p style="color: red">{{todyTuiData}}</p>
+      </ion-col>
+    </ion-col>
+  </ion-row>
+</ion-content>
